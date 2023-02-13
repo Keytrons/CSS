@@ -1,0 +1,25 @@
+/* 1. Создайте следующую структуру: внутри grid-контейнера 
+должны находиться 6 элементов.
+2. Элементы должны выстраиваться в колонки с минимальным 
+размером 100px, максимальным - 1fr. Они должны автоматически 
+заполнять собой доступное пространство.
+3. Определите 2 ряда размером 100px.
+4. Задайте отступ между элементами.
+5. Теперь попробуйте добавить в контейнер элементы, 
+посмотрите, как на это отреагирует разметка. */
+.grid-container {
+  width: auto;
+  height: auto;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px , 1fr));
+  grid-auto-rows: repeat(2,100px);
+  grid-gap: 10px 10px ;
+}
+.grid-container div{
+  text-align: center;
+  background-color: rgb(148, 233, 242);
+  border: 3px solid green;
+  color: rgb(68, 0, 255);
+  font-size: 50px;
+}

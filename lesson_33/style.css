@@ -1,0 +1,16 @@
+div h1 {
+    background-color:aquamarine;
+    text-align: center;
+}
+.img {
+    width: 800px;;
+    height: 60px;;
+    background-image: url(./img/my.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment:local;
+
+}
+p a {
+    color: #000;
+}

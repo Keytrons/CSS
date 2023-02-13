@@ -1,0 +1,38 @@
+/* 1. Создайте <div>, внутри него поместите <p>. Стилизуйте <div>, задайте размеры и фоновый цвет. Стилизуйте <p>.
+2. Сделайте так, чтобы при наведении на данный <div> менялся фоновый цвет, и менялся цвет текста параграфа.
+3. Всё это должно происходить плавно. Используйте свойство transition. */
+h2{
+  text-align: center;
+  color: blueviolet;
+}
+div {
+  width: fit-content;
+  height: fit-content;
+  display:block;
+  background: chartreuse;
+  text-decoration-color: hsla(243, 88%, 65%, 0.714);
+  transition:  1s all  ; 
+  }
+  div:hover {
+    height: 100px;
+    border-bottom: 5px solid;
+    border-radius: 10% / 10%;
+    background: #24be9a9d;
+    color: #71f9a3;
+    outline:invert;
+  }
+p{
+  color: #ff0000;
+}
+  p:hover{
+    color: blue;
+  }
+ol li {
+  font-style: italic;
+  list-style:upper-latin;
+}
+  li:hover{
+  list-style: none;
+  }
+
+  

@@ -1,0 +1,32 @@
+
+.container {
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  display:flex;
+  justify-content: space-evenly;
+  align-items:baseline;
+  flex-wrap:wrap;
+}
+.box {
+  width: 200px;
+  height: 200px;
+}
+.box-1 {
+  background-color: blue;
+}
+.box-2 {
+  background-color: rgb(255, 0, 204);
+}
+.box-3 {
+  background-color: rgb(0, 242, 255);
+}
+.box-4 {
+  background-color: rgb(246, 255, 0);
+}
+.box-5 {
+  background-color: rgb(0, 255, 13);
+}
+.box-6 {
+  background-color: rgb(255, 0, 0);
+}

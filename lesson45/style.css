@@ -1,0 +1,85 @@
+
+
+/* 1. Создайте ссылку и стилизуйте её следующим образом: */
+
+a {
+    width: fit-content;
+    display:block;
+    text-decoration: none;
+  }
+  /*  a) Размер шрифта - 20px
+      b) Жирность - 500
+      c) Цвет - чёрный
+      d) Убрать нижнее подчёркивание */
+  a:link {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    outline: none;
+    
+  }
+  
+  a:visited {
+    color: #e10303;
+  }
+  
+  a:focus {
+    border-radius: 50% 20% / 10% 40%;
+    border-bottom: 1px solid;
+    background: #f2f2f2;
+  }
+  /* 2. При наведении ссылка должна становиться зелёной, и должно появляться нижнее подчёркивание. */
+  
+  a:hover {
+    border-radius: 10% / 30%;
+    border-bottom: 5px solid;
+    background: #2fe118;
+    color: #fcc600;
+    outline:invert;
+  }
+  
+  a:active {
+    background: #a474ed;
+    color: #56f4d2;
+  }
+
+input {
+    width:200px;
+    border-radius: 10% / 20%;
+    border-bottom: 1px solid;
+    background: #97ff89;
+}
+/* 3. Создайте <input>. При фокусировке на данном поле должна появляться фиолетовая граница.  */
+
+input:hover {
+    border-radius: 10%;
+    border-bottom: 5px solid;
+    border-color: blueviolet;
+    }
+    /*a) Размер шрифта - 18px
+    b) Жирность - 300
+    c) Цвет - оранжевый
+    Для второго:
+    a) Размер шрифта - 20px
+    b) Жирность - 900
+    c) Цвет - зелёный
+    Для третьего:
+    a) Размер шрифта - 14px
+    b) Жирность - 500
+    c) Цвет - голубой
+    Для обращения к параграфам используйте псевдоклассы. */
+.a {
+  font-size: 18px;
+  font-weight: 300;
+  color:orange;
+}
+.b {
+  font-size: 20px;
+  font-weight: 900;
+  color:green;
+}
+.c {
+  font-size: 14px;
+  font-weight: 500;
+  color:deepskyblue;
+}

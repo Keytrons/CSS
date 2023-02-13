@@ -1,0 +1,26 @@
+* {
+    border-width: 3px;
+}
+.one {
+    border-style: none none solid ;
+}
+.two {
+    border-top-style:dashed;
+    border-top-color:red ;
+    border-bottom-style:dashed ;
+    border-bottom-color:red ;
+    border-left-style:double ;
+    border-left-width: 7px;
+    border-right-style:double ;
+    border-right-width: 7px;
+}
+.three {
+    border-bottom-style: solid;
+    border-bottom-color:blue;
+    border-left-color:blueviolet;
+    border-right-color:blueviolet;
+    border-left-style:dotted ;
+    border-left-width: 5px;
+    border-right-style:double ;
+    border-right-width: 7px;
+}

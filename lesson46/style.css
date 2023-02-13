@@ -1,0 +1,70 @@
+/* 1. Добавьте на страницу ссылку. Стилизуйте её.
+2. При наведение на данную ссылку перед ней должен появляться круг 10x10px.
+3. Создайте маркированный список. Стилизуйте список, уберите дефолтную маркировку.
+4. В качестве маркеров для элементов списка добавьте svg-иконку. */
+
+a {
+    padding: 10px 10px;  
+    overflow:hidden;
+    width: fit-content;
+    display:block;
+    text-decoration-line:overline;
+    text-decoration-color: #5e56f4b6;
+    transition: 1s linear; 
+  }
+  a:before {
+    content: '\25CF';
+    position: absolute;
+    color: black;
+    font-size: 10px;
+    top: 3% / 50%;
+    left: -3%;
+    transition: all 200ms ease;
+  }
+  a:link {
+    font-size: 10px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.737);
+    outline: none;    
+  }
+  a:visited {
+    color: #e10303;
+  }
+  a:focus {
+    border-radius: 20% / 10%;
+    border-bottom: 1px solid;
+    background: #f2f2f2;
+  }
+
+  a:hover {
+    border-bottom: 5px solid;
+    background: #69e7c99d;
+    color: #717ff9;
+    outline:invert;
+  }
+  a:active {
+    background: #a474ed;
+    color: #56f4d2;
+  }
+  a:hover:before {
+    left: 10px;
+  }
+ul li {
+  list-style: none;
+  font-style: italic;
+  color: #717ff9;
+}
+li::before {
+  
+    content:'' ;
+    background-image: url("svg.svg");
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:inline-block;
+    width: 15px;
+    height: 10px; 
+    margin-left: 10px;
+    
+  }
+  

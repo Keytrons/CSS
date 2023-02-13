@@ -1,0 +1,27 @@
+
+.grid-container {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  /* grid-gap: 10px 10px; */
+  justify-content: space-evenly;
+}
+div {
+  margin: 10px 0;
+  text-align: center;
+}
+.else {
+  width: 100px;
+  height: 100px;
+}
+.one{
+  align-self: start;
+}
+.six {
+  align-self: end;
+}
+.one , .else ,.six {
+  background-color: green;
+}

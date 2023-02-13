@@ -1,0 +1,57 @@
+/* 1. Поместите на страницу <div>, задайте ему размеры и границу.
+2. Для данного <div> необходимо создать анимацию плавного перехода от белого к чёрному.
+3. Для ключевых кадров используйте следующие значения фонового цвета:
+20% - #BFBFBF
+40% - #808080
+60% - #404040
+80% -#000 */
+html, body {
+  width: 1000px;
+  height: 1000px;
+}
+body {
+  margin: 0%;
+  background:linear-gradient(45deg,#8A2387,#E94057);
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite ;
+  
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.other{
+  width: 300px;
+  height: 300px;
+  border: 5px solid red;
+  animation: anim 10s ease infinite alternate;
+}
+@keyframes anim {
+
+  from {
+    background-color: #BFBFBF;
+    border: 5px solid rgb(189, 15, 15);
+
+  }
+  40% {
+    background-color: #808080;
+    border: 5px solid rgb(153, 28, 28);
+
+  }
+  60% {
+    background-color: #404040;
+    border: 5px solid rgb(58, 14, 14);
+
+  }
+  to {
+    border: 5px solid rgb(0, 0, 0);
+    background-color:#000 ;
+  }
+}

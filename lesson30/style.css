@@ -1,0 +1,19 @@
+
+p {
+    color: rgb(18, 219, 18);
+    width: 300px;
+    height: auto;
+    background-color: rgb(245, 238, 195);
+    text-align:justify;
+    text-indent: 20px;
+    word-spacing: 20px;
+    line-height: 150%;
+}
+a {
+    color: rgb(128, 196, 212);
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+
+}

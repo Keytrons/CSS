@@ -1,0 +1,37 @@
+/* 1. Сделайте так, чтобы для <span> стало возможно задавать ширину и высоту.
+2. Поместите на страницу несколько <div>, задайте им размеры и фоновый цвет. Сделайте так, чтобы они выстроились в ряд.
+3. Сверстайте таблицу с помощью <div>. Используйте свойство display: table. */
+.span {
+    display:block;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: rgb(251, 255, 21);
+
+}
+h4 {
+    text-align: center;
+    background-color: rgb(21, 255, 107);
+
+}
+.table {
+    display: table;
+    margin: 10px auto;
+    border: 2px solid rgb(159, 250, 0);
+
+}
+.row {
+    display: table-row;
+
+}
+.one , .two , .three {
+    display:table-cell; 
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.img {
+    width: 90%;
+    height: 90%;
+    object-fit:cover; 
+}  
